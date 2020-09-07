@@ -15,7 +15,7 @@
     <result column="gender" property="gender" jdbcType="CHAR" />
     <result column="email" property="email" jdbcType="VARCHAR" />
     <result column="d_id" property="dId" jdbcType="INTEGER" />
-    <association property="deptment" select="com.atguigu.dao.DeptmentMapper.selectByPrimaryKey" column="d_id"></association>
+    <association  property="deptment" select="com.atguigu.dao.DeptmentMapper.selectByPrimaryKey" column="d_id"></association>
   </resultMap>
 
   <sql id="Example_Where_Clause" >

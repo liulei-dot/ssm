@@ -1,5 +1,8 @@
 package com.atguigu.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(value = {"handler"})  //解决懒加载转化为json时的异常
 public class Deptment {
     private Integer deptId;
 
